@@ -1,0 +1,209 @@
+#container{
+  width: 100%;
+  height: 97.5vh;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+}
+
+#headerContainer{
+  width: 100%;
+  height: 50px;
+  background-color: tomato;
+  text-transform: uppercase;
+}
+
+#headerContainer > h1{
+  display: flex;
+  margin: 4.5px 10px;
+  font-size: 2em;
+}
+
+#search{
+  width: 400px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#search > label{
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+#search > #searchBox{
+width: 45%;
+padding: 5px;
+text-align: center;
+caret-color: tomato;
+font-size: medium;
+outline: none;
+border-color: tomato;
+margin-bottom: 15px;
+}
+
+#search > #newFood{
+  width: 40%;
+  color: beige;
+  background-color: tomato;
+  padding: 4px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#form-group{
+  width: 400px;
+  height: 200px;
+  /* background-color: tomato; */
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name,.calories,.image{
+  margin: 13px 20px;
+}
+
+.name > label{
+  margin-right: 20px;
+}
+
+.name > input{
+  caret-color: tomato;
+  border-color: tomato;
+  outline: none;
+}
+.calories > label{
+  margin-right: 4px;
+  margin-left: -3px;
+}
+
+
+.calories > input{
+  margin-left: 0.8px;
+  caret-color: tomato;
+  border-color: tomato;
+  outline: none;
+}
+
+.image > label{
+  margin-right: 15px;
+}
+
+.image > input{
+  caret-color: tomato;
+  border-color: tomato;
+  outline: none;
+}
+
+#submit{
+  width: 25%;
+  margin-left: 8%;
+  color: beige;
+  background-color: tomato;
+  padding: 4px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+#middleContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-evenly;
+}
+
+/* Display Container */
+#displayContainer{
+ margin: 0 auto;
+ width: 700px;
+ height: 600px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ border: 2px solid tomato;
+ border-radius: 30px;
+}
+
+#box{
+margin: 0 auto;
+width: 500px;
+height: 300px;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content:space-around;
+border: 2px solid darkgrey;
+border-radius: 10px;
+}
+
+#inner-box{
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+}
+
+#inner-box > h2{
+  margin-bottom: -10px;
+}
+
+#inner-box1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+#inner-box1 > #addInput{
+  width: 100px;
+  height: 20px;
+  outline: none;
+  caret-color: tomato;
+  border-color: tomato;
+  margin-right: 5px;
+}
+
+#inner-box1 > #add{
+  width:50px;
+  background-color: tomato;
+  color: beige;
+  border-radius: 10px;
+}
+
+#Image{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+#totalCalories{
+  width: 400px;
+  height: 300px;
+  border:2px solid tomato;
+  border-radius: 20px;
+}
+
+#totalCalories > h2{
+font-family: sans-serif;
+font-weight: 500;
+font-size: 1.5rem;
+text-align: center;
+}
+
+#addList > h1,span{
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  text-align: center;
+}

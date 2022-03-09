@@ -1,0 +1,48 @@
+<div id="container">
+  <div id="headerContainer">
+    <h1>Calory Tracker</h1>
+  </div>
+ <div id="middleContainer">
+  <div id="search">
+    <label for="searchItem">Search</label>
+    <input type="text" id="searchBox">
+    <button type="button" id="newFood" (click)="toggleShow()">Add New Food</button>
+    <div id="form-group" *ngIf="show">
+      <div class="name">
+        <label for="Name">Name</label>
+        <input type="text" id="name" [(ngModel)]="Name">
+      </div>
+      <div class="calories">
+        <label for="Calory">Calories</label>
+        <input type="number" id="calories" [(ngModel)]="Calory"><br>
+      </div>
+      <div class="image">
+        <label for="Image">Image</label>
+        <input type="text" id="image" [(ngModel)]="Image">
+      </div>
+      <button type="submit" id="submit" (ngSubmit)="onSubmit()" (click)="onSubmit()">Submit</button>
+  </div>
+  </div>
+  <div id="totalCalories">
+    <h2>Today's Food 2102 cal</h2>
+    <div *ngFor="let li of TotalFood" id="addList">
+      <h1>{{li.Name}}&nbsp;{{li.Calory}} * <span>{{li.quantity}}</span></h1>
+    </div>
+  </div>
+ </div>
+
+
+  <div id="displayContainer">
+    <div id="box" *ngFor="let li of FoodList">
+      <img src={{li.Image}} alt="" id="Image">
+      <div id="inner-box">
+      <h2>{{li.Name}}</h2>
+      <h3>Calories - {{li.Calory}}</h3>
+      <div id="inner-box1">
+        <input type="number" [(ngModel)]="AddExtra" id="addInput">
+        <button type="submit" id="add" (click)="Add(li.Name)">Add</button>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
